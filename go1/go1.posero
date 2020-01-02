@@ -1,0 +1,138 @@
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+              ____  ___
+            / ___| / _ \
+            | |  _| | | |
+            | |_| | |_| |
+            \____ |\___/
+
+
+1. what is go?
+2. data type & variabel
+3. array vs slice
+4. looping
+5. concurence, chanel, sync
+6. http/tcp
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+what is go?
+
+  Go > create by google in 2007 and published on 2009
+
+  Author > Robert Griesemer
+         > Rop Pike
+         > Ken Thompson
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+What is GO?
+
+  1. staticaly typed
+  2. Compilation and Execution speed
+  3. concurence not parellelism
+  4. gerbage colection
+  5. builtin libraries
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "ipython"
+POSERO>> set filetype=python
+What is GO?
+
+  echo "export GOPATH=$HOME/your_folder/go" >> ~/.bash_profile
+  source ~/.bash_profile
+
+  workspace
+
+  src/  <-- $GOPATH
+    github.com/
+      your_project/
+  bin/
+  pkg/
+
+
+
+go get github.com/your_project
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+main.go
+
+  package main
+
+  import "fmt"
+
+  func main(){
+    //komentar
+    fmt.Println("halo guys...")
+  }
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+data type Go
+
+  non-decimal > uint (positif)
+              > int (negatif positif)
+
+  decimal     > float32
+              > float64
+
+  bool
+  string
+  nil
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+variabel Go
+
+  var <nama-variabel><tipe-data>
+  var <nama-variabel><tipe-data> = <isi>
+
+  var name string = "fossil"
+
+  var number int
+  number = 123
+
+  //variabel tanpa tipe data
+  name := "fossil"
+  number := 123
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  package main
+
+  import "fmt"
+
+  func main(){
+    var name string = "chandra"
+    age := 19
+    fmt.Printf("my name is %s i am %d years old\n",name,age)
+  }
+
