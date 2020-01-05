@@ -1,32 +1,34 @@
-POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 0
 POSERO>> let b:posero_fake_type = '\v(.*)'
 
-              ____  ___
-            / ___| / _ \
-            | |  _| | | |
-            | |_| | |_| |
-            \____ |\___/
+                  ____  ___
+                / ___| / _ \
+                | |  _| | | |
+                | |_| | |_| |
+                \____ |\___/
 
 
-1. what is go?
-2. data type & variabel
-3. array vs slice
-4. looping
-5. concurence, chanel, sync
-6. http/tcp
+      1. what is go?
+      2. data type & variabel
+      3. array vs slice
+      4. looping
+      5. concurence, chanel, sync
+      6. http/tcp
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_fake_type = '\v(.*)'
 
-what is go?
+    what is go?
 
-  Go > create by google in 2007 and published on 2009
+      Go > create by google in 2007 and published on 2009
 
-  Author > Robert Griesemer
-         > Rop Pike
-         > Ken Thompson
+      Author > Robert Griesemer
+             > Rop Pike
+             > Ken Thompson
 
 
 
@@ -34,24 +36,27 @@ what is go?
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_fake_type = '\v(.*)'
 
-What is GO?
+    What is GO?
 
-  1. staticaly typed
-  2. Compilation and Execution speed
-  3. concurence not parellelism
-  4. gerbage colection
-  5. builtin libraries
+      1. staticaly typed
+      2. Compilation and Execution speed
+      3. concurence not parellelism
+      4. gerbage colection
+      5. builtin libraries
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "ipython"
 POSERO>> set filetype=python
-What is GO?
+
+  What is GO?
 
   echo "export GOPATH=$HOME/your_folder/go" >> ~/.bash_profile
   source ~/.bash_profile
@@ -68,71 +73,124 @@ What is GO?
 
 go get github.com/your_project
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
-main.go
+    main.go
 
-  package main
+      package main
 
-  import "fmt"
+      import "fmt"
 
-  func main(){
-    //komentar
-    fmt.Println("halo guys...")
-  }
+      func main(){
+        //komentar
+        fmt.Println("halo guys...")
+      }
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
-data type Go
+    data type Go
 
-  non-decimal > uint (positif)
-              > int (negatif positif)
+      non-decimal > uint (positif)
+                  > int (negatif positif)
 
-  decimal     > float32
-              > float64
+      decimal     > float32
+                  > float64
 
-  bool
-  string
-  nil
+      bool
+      string
+      nil
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
-variabel Go
+    variabel Go
 
-  var <nama-variabel><tipe-data>
-  var <nama-variabel><tipe-data> = <isi>
+      var <nama-variabel><tipe-data>
+      var <nama-variabel><tipe-data> = <isi>
 
-  var name string = "fossil"
+      var name string = "fossil"
 
-  var number int
-  number = 123
+      var number int
+      number = 123
 
-  //variabel tanpa tipe data
-  name := "fossil"
-  number := 123
+      //variabel tanpa tipe data
+      name := "fossil"
+      number := 123
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
-  package main
+  example :
+  
+      package main
 
-  import "fmt"
+      import "fmt"
 
-  func main(){
-    var name string = "chandra"
-    age := 19
-    fmt.Printf("my name is %s i am %d years old\n",name,age)
-  }
+      func main(){
+        var name string = "chandra"
+        age := 19
+        fmt.Printf("my name is %s i am %d years old\n",name,age)
+      }
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+    Array Go
+      
+      //kapasitas array ditentukan saat membuat array
+      var <nama_array> [kapasitas_array]<tipe_data>
+      //langsung di insialisasi nilainya
+      var <nama_array> = [kapasitas_array]<tipe_data>{nilai1,nilai2}
+
+    example :
+      var name [2]string
+      name[0] = "chandra"
+      name[1] = "agung"
+      
+      name[2] = "rizky" // <- error(melebihi kapasitas)
+
+      var fruit = [2]string{"apel","jeruk"}
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  Array Go
+
+    > make
+
+        var <nama_array> = make([]<tipe_data>,<kapasitas_array>)
+
+      example :
+
+        var name = make([]string,2)
+        name[0] = "chandra"
+        name[1] = "agung"
+
+    > inisialisasi tanpa kapasitas
+      
+      [kapasitas_array] -> [...]
+
+      var name = [...]string{"chandra","agung","rizky"}
