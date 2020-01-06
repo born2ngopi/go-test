@@ -76,7 +76,7 @@ go get github.com/your_project
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '^\$'
+POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -132,7 +132,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_fake_type ='\v(.*)' 
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -231,7 +231,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -253,7 +253,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -275,7 +275,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -295,7 +295,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -321,7 +321,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -345,7 +345,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_fake_type = '\v(.*)'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -363,4 +363,45 @@ POSERO>> set filetype=go
 
     func sum(a,b int)int{
       return a + b
+    }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  function multiple return
+
+    example :
+
+    func square(s int)(area,keliling int){
+      area = s * s
+      keliling =  4 * s
+
+      return
+    }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  Closure function
+
+    > function stored in one variable
+
+    example :
+
+    func main(){
+
+      var getArea = func (s int)int{
+        return s * s
+      }
+
+      result = getArea(5)
+      fmt.Println(result)
     }
