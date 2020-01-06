@@ -404,4 +404,26 @@ POSERO>> set filetype=go
 
       result = getArea(5)
       fmt.Println(result)
+  }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  struct 
+
+  > struct is a collection of variable, or method
+
+  > type <name_struct> struct {
+      //something
     }
+
+  example :
+    
+  type Cars struct {
+    color string
+    brand string
+  }
