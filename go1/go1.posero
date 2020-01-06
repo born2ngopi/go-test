@@ -1,6 +1,6 @@
-POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_auto_next_line = 0
 POSERO>> let b:posero_push_all = 0
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type =  "^\$"
 
                   ____  ___
                 / ___| / _ \
@@ -13,14 +13,15 @@ POSERO>> let b:posero_fake_type = '\v(.*)'
       2. data type & variabel
       3. array vs slice
       4. looping
-      5. concurence, chanel, sync
-      6. http/tcp
+      5. function
+      6. concurence, chanel, sync
+      7. http/tcp
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type ="^\S" 
 
     what is go?
 
@@ -38,7 +39,7 @@ POSERO>> let b:posero_fake_type = '\v(.*)'
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type = "^\$"
 
     What is GO?
 
@@ -52,7 +53,7 @@ POSERO>> let b:posero_fake_type = '\v(.*)'
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type = "^\$"
 POSERO>> let b:posero_syntax = "ipython"
 POSERO>> set filetype=python
 
@@ -75,7 +76,7 @@ go get github.com/your_project
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type = '^\$'
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -92,7 +93,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type = "^\$"
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -110,7 +111,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type = "^\$"
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -131,7 +132,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type = "^\$"
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -150,7 +151,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type = "^\$"
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -173,7 +174,7 @@ POSERO>> set filetype=go
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> let b:posero_fake_type = "^\$"
 POSERO>> let b:posero_syntax = "go"
 POSERO>> set filetype=go
 
@@ -194,3 +195,172 @@ POSERO>> set filetype=go
       [kapasitas_array] -> [...]
 
       var name = [...]string{"chandra","agung","rizky"}
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  Slice GO
+
+    > reference element array
+
+    var name = []string{"chandra","agung","rizky"}
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  Array vs Slice
+    
+    > length
+      
+      array -> fixed
+      slice -> flexible
+        //you can add new element using append function
+
+    >array in Go are values.
+    >slice in Go are reference types
+    
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  Array vs Slice 
+
+    //in array
+
+    func getNewNumbers(numbers [2]int){
+      numbers[0] = 3
+    }
+
+    func main(){
+      var numbers = [2]int{1,2} //<-- array
+
+      getNewNumbers(numbers)
+      fmt.Println(numbers) //<--still [1,2]
+    }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  Array vs Slice 
+
+    //in slice
+
+    func getNewNumbers(numbers []int){
+      numbers[0] = 3
+    }
+
+    func main(){
+      var numbers = []int{1,2} //<--slice
+
+      getNewNumbers(numbers)
+      fmt.Println(numbers) //<-- [3,2]
+    }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  looping
+
+    looping in go only with for
+
+    for <init>;<condition>;<increment/decrement>{
+      statement(s);
+    }
+
+    //example
+    for i := 0; i < 10; i++{
+      fmt.Println(i)
+    }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  but even with just for, we can use it like foreach or while
+
+  >while
+
+    num := 0
+
+    for num < 5{
+      fmt.Println(num)
+      num++
+    }
+
+  >foreach
+
+    var num = []int{1,2,3,4}
+
+    for _, i :=range num{
+      fmt.Println(i)
+    }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  break & continue
+
+    var i = 0
+
+    for {
+
+      if i % 2 == 0{
+        continue
+      }
+
+      if i==11{
+        break
+      }
+
+      fmt.Println(i)
+    }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = "^\$"
+POSERO>> let b:posero_syntax = "go"
+POSERO>> set filetype=go
+
+  function Go
+
+  > keyword func
+
+  example :
+    
+    func sum(a,b int){
+      fmt.Println(a + b)
+    }
+
+    // with return value
+
+    func sum(a,b int)int{
+      return a + b
+    }
